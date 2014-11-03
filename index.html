@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wh test</title>
+</head>
+<body>
+	<p>This is a test of <strong>seajs</strong></p>
+
+	<script type="text/javascript" src="modules/seajs/dist/sea.js"></script>
+	<script type="text/javascript">
+		seajs.config({
+			paths:{
+				"base" : "../../../modules/"
+			},
+			alias:{
+				"jquery" : "base/jquery/jquery-2.1.1.min.js"
+			}
+		})
+		seajs.use("./static/hello/src/main");
+	</script>
+</body>
+</html>
